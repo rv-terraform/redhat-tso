@@ -85,7 +85,7 @@ resource "azurerm_network_interface" "myterraformnic" {
     ip_configuration {
         name                          = "myNicConfiguration"
         subnet_id                     = "${azurerm_subnet.myterraformsubnet.id}"
-        private_ip_address_allocation = "dynamic"blici }
+        private_ip_address_allocation = "dynamic"
         public_ip_address_id          = "${azurerm_public_ip.myterraformpublicip.id}"
     }
 
