@@ -124,7 +124,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     os_profile_linux_config {
         disable_password_authentication = true
         ssh_keys {
-            path     = "/home/${var.adminuser}/.ssh/authorized_keys }
+            path     = "/home/${var.adminuser}/.ssh/authorized_keys"
             key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPj8ZTnznnsJ7PfLckx8Xp6UMm9tr1Mj8KV6/Ki0S0aJ9dZOT+ayAfZDYf88m+RnaUnYiEu1cDl3vuM1Yr8PR/hwnzuPRIFvserxoJZTwxgy5XvvQMRlVxgV3LBINmD5L/PPuVvqpdZLWzhbWENQjar4IG+JdvnZdP2ncYocVQglSmKQXaz/Xz/xdaaTsYAuHeeuXlqoLWDWb0pPTAmau7I/G+urORs6lkH+dwvfZe7NuMNjFBnbvOB38XhaqbF5/y0EVgiy1IbXXX96wcZzXMbUpmojWExySfV1ZOJzzKQiLM51m7DWdra89bjnORUGDMCKBxoqOjImiTDWxk+FnJ venerari@sdcgigdcapmdw01"
         }
     }
