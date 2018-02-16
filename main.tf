@@ -66,7 +66,7 @@ resource "azurerm_network_security_group" "myterraformnsg" {
         protocol                   = "Tcp"
         source_port_range          = "*"
         destination_port_range     = "80"
-        source_address_prefixrefix }
+        source_address_prefixrefix = "*"
         destination_address_prefix = "*"
     }
  
